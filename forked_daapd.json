@@ -1,0 +1,73 @@
+{
+	"name": "Plex",
+	"plugin_schema": "2",
+	"release": "12.1-RELEASE",
+	"artifact": "https://github.com/jailmanager/iocage-plugin-plex.git",
+	"official": false,
+	"properties": {
+		"dhcp": 1
+	},
+	"devfs_ruleset": {
+		"paths": {},
+		"includes": []
+	},
+	"pkgs": [
+		"curl",
+		"alsa-lib",
+		"avahi",
+		"avahi-libdns",
+		"fontconfig",
+		"fribidi",
+		"gettext",
+		"json-c",
+		"libconfuse",
+		"libevent",
+		"libgcrypt",
+		"libiconv",
+		"libinotify",
+		"libplist",
+		"libsodium",
+		"libsoxr",
+		"libunistring",
+		"libwebsockets",
+		"nss_mdns",
+		"openjdk8-jre",
+		"pkgconf",
+		"sqlite",
+		"sqlite3",
+		"autoconf",
+		"automake",
+		"autotools",
+		"cmake",
+		"git",
+		"glib",
+		"gmake",
+		"gperf",
+		"iconv",
+		"libtool",
+		"mercurial",
+		"mxml",
+		"nasm",
+		"opus",
+		"rsync",
+		"wget",
+		"yasm"
+	],
+	"packagesite": "http://pkg.FreeBSD.org/${ABI}/latest",
+	"jailman": {
+		"traefik_service_port": 3689,
+		"variables": {
+			"options": [],
+			"required": []
+		}
+	},
+	"fingerprints": {
+		"iocage-plugins": [
+			{
+				"function": "sha256",
+				"fingerprint": "b0170035af3acc5f3f3ae1859dc717101b4e6c1d0a794ad554928ca0cbb2f438"
+			}
+		]
+	},
+	"revision": "0"
+}

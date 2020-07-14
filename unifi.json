@@ -1,8 +1,8 @@
 {
-	"name": "Transmission",
+	"name": "Unifi",
 	"plugin_schema": "2",
 	"release": "12.1-RELEASE",
-	"artifact": "https://github.com/jailmanager/iocage-plugin-transmission.git",
+	"artifact": "https://github.com/jailmanager/iocage-plugin-unifi.git",
 	"official": false,
 	"properties": {
 		"dhcp": 1
@@ -12,14 +12,12 @@
 		"includes": []
 	},
 	"pkgs": [
-		"bash",
-		"unzip",
-		"unrar",
-		"transmission"
+		"unifi5",
+		"jq"
 	],
 	"packagesite": "http://pkg.FreeBSD.org/${ABI}/latest",
 	"jailman": {
-		"traefik_service_port": 9091,
+		"traefik_service_port": 8443,
 		"variables": {
 			"options": [],
 			"required": []

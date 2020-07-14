@@ -1,0 +1,127 @@
+{
+	"type": "object",
+	"properties": {
+		"name": {
+			"type": "string"
+		},
+		"plugin_schema": {
+			"type": "string"
+		},
+		"release": {
+			"type": "string"
+		},
+		"artifact": {
+			"type": "string"
+		},
+		"official": {
+			"type": "boolean"
+		},
+		"properties": {
+			"type": "object"
+		},
+		"devfs_ruleset": {
+			"type": "object",
+			"properties": {
+				"paths": {
+					"type": "object"
+				},
+				"includes": {
+					"type": "array"
+				}
+			}
+		},
+		"pkgs": {
+			"type": "array",
+			"items": [
+				{
+					"type": "string"
+				}
+			]
+		},
+		"packagesite": {
+			"type": "string"
+		},
+		"jailman": {
+			"type": "object",
+			"properties": {
+				"traefik_service_port": {
+					"type": "integer"
+				},
+				"variables": {
+					"type": "object",
+					"properties": {
+						"options": {
+							"type": "array",
+							"items": [
+								{
+									"type": "string"
+								}
+							]
+						},
+						"required": {
+							"type": "array",
+							"items": [
+								{
+									"type": "string"
+								}
+							]
+						}
+					},
+					"required": [
+						"options",
+						"required"
+					]
+				}
+			},
+			"required": [
+				"traefik_service_port",
+				"variables"
+			]
+		},
+		"fingerprints": {
+			"type": "object",
+			"properties": {
+				"iocage-plugins": {
+					"type": "array",
+					"items": [
+						{
+							"type": "object",
+							"properties": {
+								"function": {
+									"type": "string"
+								},
+								"fingerprint": {
+									"type": "string"
+								}
+							},
+							"required": [
+								"function",
+								"fingerprint"
+							]
+						}
+					]
+				}
+			},
+			"required": [
+				"iocage-plugins"
+			]
+		},
+		"revision": {
+			"type": "string"
+		}
+	},
+	"required": [
+		"name",
+		"plugin_schema",
+		"release",
+		"artifact",
+		"official",
+		"properties",
+		"devfs_ruleset",
+		"pkgs",
+		"packagesite",
+		"jailman",
+		"fingerprints",
+		"revision"
+	]
+}

@@ -1,0 +1,51 @@
+{
+	"name": "Plex",
+	"plugin_schema": "2",
+	"release": "12.1-RELEASE",
+	"artifact": "https://github.com/jailmanager/iocage-plugin-plex.git",
+	"official": false,
+	"properties": {
+		"dhcp": 1
+	},
+	"devfs_ruleset": {
+		"paths": {
+			"bpf*": null,
+			"dri*": null,
+			"dri/*": null,
+			"drm*": null,
+			"drm/*": null
+		},
+		"includes": [
+			"$devfsrules_hide_all",
+			"$devfsrules_unhide_basic",
+			"$devfsrules_unhide_login",
+			"4"
+		]
+	},
+	"pkgs": [
+		"plexmediaserver",
+		"ffmpeg"
+	],
+	"packagesite": "http://pkg.FreeBSD.org/${ABI}/latest",
+	"jailman": {
+		"traefik_service_port": 32400,
+		"variables": {
+			"options": [
+				"ramdisk",
+				"hw_transcode",
+				"ruleset_script",
+				"beta"
+			],
+			"required": []
+		}
+	},
+	"fingerprints": {
+		"iocage-plugins": [
+			{
+				"function": "sha256",
+				"fingerprint": "b0170035af3acc5f3f3ae1859dc717101b4e6c1d0a794ad554928ca0cbb2f438"
+			}
+		]
+	},
+	"revision": "0"
+}

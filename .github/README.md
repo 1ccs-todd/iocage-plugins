@@ -1,10 +1,10 @@
-# iocage-ix-plugins
-Official iXsystems iocage plugins for [FreeNAS](http://www.freenas.org), [TrueOS](https://www.trueos.org) and [FreeBSD](http://www.freebsd.org)
+# iocage-plugins
+Jailmans iocage plugins for [FreeNAS](http://www.freenas.org), [TrueOS](https://www.trueos.org) and [FreeBSD](http://www.freebsd.org)
 
 Plugin Json files are added to this repo, along with a respective icon in icons/
 
-When a plugin is made 'official' it should be added to the INDEX json and
-it will appear in iocage's plugin listing
+When a plugin is made it should be added to the INDEX json and
+it will appear in iocage's plugin listing if official
 
 # Installing Plugins
 

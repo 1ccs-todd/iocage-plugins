@@ -1,8 +1,8 @@
 {
-	"name": "Transmission",
+	"name": "Organizr",
 	"plugin_schema": "2",
 	"release": "12.1-RELEASE",
-	"artifact": "https://github.com/jailmanager/iocage-plugin-transmission.git",
+	"artifact": "https://github.com/jailmanager/iocage-plugin-organizr.git",
 	"official": false,
 	"properties": {
 		"dhcp": 1
@@ -12,14 +12,23 @@
 		"includes": []
 	},
 	"pkgs": [
-		"bash",
-		"unzip",
-		"unrar",
-		"transmission"
+		"nginx",
+		"php74",
+		"php74-filter",
+		"php74-curl",
+		"php74-json",
+		"php74-openssl",
+		"php74-pdo",
+		"php74-pdo_sqlite",
+		"php74-session",
+		"php74-simplexml",
+		"php74-sqlite3",
+		"php74-zip",
+		"git"
 	],
 	"packagesite": "http://pkg.FreeBSD.org/${ABI}/latest",
 	"jailman": {
-		"traefik_service_port": 9091,
+		"traefik_service_port": 80,
 		"variables": {
 			"options": [],
 			"required": []

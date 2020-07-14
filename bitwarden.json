@@ -1,8 +1,8 @@
 {
-	"name": "Transmission",
+	"name": "Bitwarden",
 	"plugin_schema": "2",
 	"release": "12.1-RELEASE",
-	"artifact": "https://github.com/jailmanager/iocage-plugin-transmission.git",
+	"artifact": "https://github.com/jailmanager/iocage-plugin-bitwarden.git",
 	"official": false,
 	"properties": {
 		"dhcp": 1
@@ -12,14 +12,16 @@
 		"includes": []
 	},
 	"pkgs": [
+		"git",
+		"sudo",
 		"bash",
-		"unzip",
-		"unrar",
-		"transmission"
+		"node",
+		"npm",
+		"mariadb104-client"
 	],
 	"packagesite": "http://pkg.FreeBSD.org/${ABI}/latest",
 	"jailman": {
-		"traefik_service_port": 9091,
+		"traefik_service_port": 8000,
 		"variables": {
 			"options": [],
 			"required": []

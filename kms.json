@@ -1,8 +1,8 @@
 {
-	"name": "Transmission",
+	"name": "KMS",
 	"plugin_schema": "2",
 	"release": "12.1-RELEASE",
-	"artifact": "https://github.com/jailmanager/iocage-plugin-transmission.git",
+	"artifact": "https://github.com/jailmanager/iocage-plugin-kms.git",
 	"official": false,
 	"properties": {
 		"dhcp": 1
@@ -13,13 +13,14 @@
 	},
 	"pkgs": [
 		"bash",
-		"unzip",
-		"unrar",
-		"transmission"
+		"py37-tkinter",
+		"py37-pip",
+		"py37-sqlite3",
+		"git"
 	],
 	"packagesite": "http://pkg.FreeBSD.org/${ABI}/latest",
 	"jailman": {
-		"traefik_service_port": 9091,
+		"traefik_service_port": 80,
 		"variables": {
 			"options": [],
 			"required": []

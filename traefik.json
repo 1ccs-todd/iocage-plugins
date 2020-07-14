@@ -1,8 +1,8 @@
 {
-	"name": "Transmission",
+	"name": "Traefik",
 	"plugin_schema": "2",
 	"release": "12.1-RELEASE",
-	"artifact": "https://github.com/jailmanager/iocage-plugin-transmission.git",
+	"artifact": "https://github.com/jailmanager/iocage-plugin-traefik.git",
 	"official": false,
 	"properties": {
 		"dhcp": 1
@@ -12,14 +12,11 @@
 		"includes": []
 	},
 	"pkgs": [
-		"bash",
-		"unzip",
-		"unrar",
-		"transmission"
+		"traefik2"
 	],
 	"packagesite": "http://pkg.FreeBSD.org/${ABI}/latest",
 	"jailman": {
-		"traefik_service_port": 9091,
+		"traefik_service_port": 443,
 		"variables": {
 			"options": [],
 			"required": []

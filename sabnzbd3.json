@@ -1,8 +1,8 @@
 {
-	"name": "Transmission",
+	"name": "Sabnzbd3",
 	"plugin_schema": "2",
 	"release": "12.1-RELEASE",
-	"artifact": "https://github.com/jailmanager/iocage-plugin-transmission.git",
+	"artifact": "https://github.com/jailmanager/iocage-plugin-sabnzbd3.git",
 	"official": false,
 	"properties": {
 		"dhcp": 1
@@ -12,14 +12,17 @@
 		"includes": []
 	},
 	"pkgs": [
-		"bash",
-		"unzip",
+		"git",
+		"python3",
+		"py37-pip",
+		"py37-sqlite3",
 		"unrar",
-		"transmission"
+		"par2cmdline-tbb",
+		"p7zip"
 	],
 	"packagesite": "http://pkg.FreeBSD.org/${ABI}/latest",
 	"jailman": {
-		"traefik_service_port": 9091,
+		"traefik_service_port": 8080,
 		"variables": {
 			"options": [],
 			"required": []
