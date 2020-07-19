@@ -12,7 +12,6 @@
 		"includes": []
 	},
 	"pkgs": [
-		"jackett",
 		"libiconv"
 	],
 	"packagesite": "http://pkg.FreeBSD.org/${ABI}/latest",

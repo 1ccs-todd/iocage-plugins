@@ -13,6 +13,9 @@
 	},
 	"pkgs": [
 		"bash",
+		"python37",
+		"python3",
+		"python",
 		"py37-tkinter",
 		"py37-pip",
 		"py37-sqlite3",

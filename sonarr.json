@@ -13,7 +13,6 @@
 		"includes": []
 	},
 	"pkgs": [
-		"sonarr",
 		"mono",
 		"mediainfo",
 		"sqlite3"

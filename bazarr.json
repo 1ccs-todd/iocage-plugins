@@ -13,6 +13,8 @@
 	},
 	"pkgs": [
 		"python37",
+		"python3",
+		"python",
 		"py37-pip",
 		"py37-libxml2",
 		"py37-sqlite3",
@@ -20,12 +22,6 @@
 		"git",
 		"unrar",
 		"ffmpeg",
-		"git",
-		"python3",
-		"py37-pip",
-		"py37-libxml2",
-		"libxslt",
-		"py37-sqlite3"
 	],
 	"packagesite": "http://pkg.FreeBSD.org/${ABI}/latest",
 	"jailman": {

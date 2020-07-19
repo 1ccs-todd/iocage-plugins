@@ -12,7 +12,6 @@
 		"includes": []
 	},
 	"pkgs": [
-		"radarr",
 		"mono",
 		"mediainfo",
 		"sqlite3",
