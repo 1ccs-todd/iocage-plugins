@@ -12,6 +12,10 @@
 		"includes": []
 	},
 	"pkgs": [
+		"curl",
+		"ca_root_nss",
+		"bash",
+		"jq",
 		"git",
 		"python37",
 		"python3",

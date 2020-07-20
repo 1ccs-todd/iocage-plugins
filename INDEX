@@ -1,172 +1,172 @@
 {
-    "nextcloud": {
-        "MANIFEST": "nextcloud.json",
-        "name": "Nextcloud",
-        "icon": "https://raw.githubusercontent.com/jailmanager/iocage-plugins/master/icons/nextcloud.png",
-        "description": "Suite of client-server software for creating and using file hosting services.",
-        "official": true,
-        "primary_pkg": "nextcloud-php74",
-        "category": "collaboration",
-        "maintainer": "iXsystems <dev@ixsystems.com>",
-        "homepage": "https://nextcloud.com/"
-    },
-    "plex": {
-        "MANIFEST": "plexmediaserver.json",
-        "name": "Plex Media Server",
-        "icon": "https://raw.githubusercontent.com/jailmanager/iocage-plugins/master/icons/plex.png",
-        "description": "Media center software to easily manage and stream digital media.",
-        "official": true,
-        "primary_pkg": "plexmediaserver",
-        "category": "entertainment",
-        "maintainer": "iXsystems <dev@ixsystems.com>",
-        "homepage": "https://www.plex.tv/"
-    },
-    "bazarr": {
-        "MANIFEST": "bazarr.json",
-        "description": "Bazarr is a companion application to Sonarr and Radarr that manages and downloads subtitles.",
-        "icon": "https://raw.githubusercontent.com/jailmanager/iocage-plugins/master/icons/bazarr.png",
-        "name": "Bazarr",
-        "official": false,
-        "primary_pkg": null
-    },
-    "grafana": {
-        "MANIFEST": "grafana.json",
-        "description": "Grafana allows you to query, visualize, alert on and understand your metrics no matter where they are stored. Create, explore, and share dashboards with your team and foster a data driven culture.",
-        "icon": "https://raw.githubusercontent.com/jailmanager/iocage-plugins/master/icons/grafana.png",
-        "name": "Grafana (with InfluxDB)",
-        "official": false,
-        "primary_pkg": "grafana6"
-    },
-    "jackett": {
-        "MANIFEST": "jackett.json",
-        "description": "API Support for your favorite torrent trackers",
-        "icon": "https://raw.githubusercontent.com/jailmanager/iocage-plugins/master/icons/jackett.png",
-        "name": "Jackett",
-        "official": false,
-        "primary_pkg": "jackett"
-    },
-    "radarr": {
-        "MANIFEST": "radarr.json",
-        "name": "radarr",
-        "icon": "https://raw.githubusercontent.com/jailmanager/iocage-plugins/master/icons/radarr.png",
-        "description": "Fork of Sonarr. Automatically download movies in the style of Couchpotato.",
-        "official": false,
-        "primary_pkg": "radarr",
-        "category": "content",
-        "homepage": "https://radarr.video/"
-    },
-    "sabnzbd": {
-        "MANIFEST": "sabnzbd.json",
-        "description": "Sabznbd is a newsgroup reader.",
-        "icon": "https://raw.githubusercontent.com/jailmanager/iocage-plugins/master/icons/sabnzbd.png",
-        "name": "Sabnzbd",
-        "official": false,
-        "primary_pkg": "sabnzbdplus"
-    },
-    "sabnzbd3": {
-        "MANIFEST": "sabnzbd3.json",
-        "description": "Sabznbd3 is a newsgroup reader.",
-        "icon": "https://raw.githubusercontent.com/jailmanager/iocage-plugins/master/icons/sabnzbd.png",
-        "name": "Sabnzbd",
-        "official": false,
-        "primary_pkg": null
-    },
-    "sonarr": {
-        "MANIFEST": "sonarr.json",
-        "name": "Sonarr",
-        "icon": "https://raw.githubusercontent.com/jailmanager/iocage-plugins/master/icons/sonarr.png",
-        "description": "Multi-platform app to search, download, and manage TV shows.",
-        "official": false,
-        "primary_pkg": "sonarr",
-        "category": "content",
-        "homepage": "https://sonarr.tv/"
-    },
-    "unifi": {
-        "MANIFEST": "unificontroller.json",
-        "description": "Software-Defined Networking platform that provides an end-to-end system of network devices across different locations.",
-        "icon": "https://raw.githubusercontent.com/jailmanager/iocage-plugins/master/icons/unificontroller.png",
-        "name": "unificontroller",
-        "official": false,
-        "primary_pkg": "unifi5"
-    },
-    "transmission": {
-        "MANIFEST": "transmission.json",
-        "name": "Transmission",
-        "icon": "https://raw.githubusercontent.com/jailmanager/iocage-plugins/master/icons/transmission.png",
-        "description": "Fast and lightweight BitTorrent client.",
-        "official": false,
-        "primary_pkg": "transmission-daemon",
-        "category": "content",
-        "homepage": "https://transmissionbt.com/"
-    },
-    "tautulli": {
-        "MANIFEST": "tautulli.json",
-        "name": "Tautulli",
-        "icon": "https://raw.githubusercontent.com/jailmanager/iocage-plugins/master/icons/tautulli.png",
-        "description": "Monitors analytics and notifications for Plex Media Server. (formerly known as PlexPy)",
-        "official": false,
-        "primary_pkg": null,
-        "category": "entertainment",
-        "homepage": "https://tautulli.com/"
-    },
-    "bitwarden": {
-        "MANIFEST": "bitwarden.json",
-        "name": "Bitwarden",
-        "icon": "https://raw.githubusercontent.com/jailmanager/iocage-plugins/master/icons/tautulli.png",
-        "description": "Bitwarden is a password manager",
-        "official": false,
-        "primary_pkg": null,
-        "category": "security",
-        "homepage": ""
-    },
-    "forked_daapd": {
-        "MANIFEST": "forked_daapd.json",
-        "name": "forked_daapd",
-        "icon": "https://raw.githubusercontent.com/jailmanager/iocage-plugins/master/icons/tautulli.png",
-        "description": "forked_daapd transcodes audio",
-        "official": false,
-        "primary_pkg": null,
-        "category": "entertainment",
-        "homepage": ""
-    },
-    "kms": {
-        "MANIFEST": "kms.json",
-        "name": "KMS",
-        "icon": "https://raw.githubusercontent.com/jailmanager/iocage-plugins/master/icons/tautulli.png",
-        "description": "KMS is a activation server for Microsoft Windows",
-        "official": false,
-        "primary_pkg": null,
-        "category": "entertainment",
-        "homepage": ""
-    },
-	    "traefik": {
-        "MANIFEST": "traefik.json",
-        "name": "Traefik",
-        "icon": "https://raw.githubusercontent.com/jailmanager/iocage-plugins/master/icons/traefik.png",
-        "description": "Traefik is a reverse proxy server",
-        "official": false,
-        "primary_pkg": null,
-        "category": "entertainment",
-        "homepage": ""
-    },
-	    "influxdb": {
-        "MANIFEST": "influxdb.json",
-        "name": "InfluxDB",
-        "icon": "https://raw.githubusercontent.com/jailmanager/iocage-plugins/master/icons/influxdb.png",
-        "description": "InfluxDB is a database server",
-        "official": false,
-        "primary_pkg": null,
-        "category": "entertainment",
-        "homepage": ""
-    },
-    "organizr": {
-        "MANIFEST": "organizr.json",
-        "name": "Organizr",
-        "icon": "https://raw.githubusercontent.com/jailmanager/iocage-plugins/master/icons/organizr.png",
-        "description": "Organizr is a web GUI to sort your different webinterfaces",
-        "official": false,
-        "primary_pkg": null,
-        "category": "entertainment",
-        "homepage": ""
-    }
+	"nextcloud": {
+		"MANIFEST": "nextcloud.json",
+		"name": "Nextcloud",
+		"icon": "https://raw.githubusercontent.com/jailmanager/iocage-plugins/master/icons/nextcloud.png",
+		"description": "Suite of client-server software for creating and using file hosting services.",
+		"official": true,
+		"primary_pkg": "nextcloud-php74",
+		"category": "collaboration",
+		"maintainer": "iXsystems <dev@ixsystems.com>",
+		"homepage": "https://nextcloud.com/"
+	},
+	"plex": {
+		"MANIFEST": "plexmediaserver.json",
+		"name": "Plex Media Server",
+		"icon": "https://raw.githubusercontent.com/jailmanager/iocage-plugins/master/icons/plex.png",
+		"description": "Media center software to easily manage and stream digital media.",
+		"official": true,
+		"primary_pkg": "plexmediaserver",
+		"category": "entertainment",
+		"maintainer": "iXsystems <dev@ixsystems.com>",
+		"homepage": "https://www.plex.tv/"
+	},
+	"bazarr": {
+		"MANIFEST": "bazarr.json",
+		"description": "Bazarr is a companion application to Sonarr and Radarr that manages and downloads subtitles.",
+		"icon": "https://raw.githubusercontent.com/jailmanager/iocage-plugins/master/icons/bazarr.png",
+		"name": "Bazarr",
+		"official": false,
+		"primary_pkg": null
+	},
+	"grafana": {
+		"MANIFEST": "grafana.json",
+		"description": "Grafana allows you to query, visualize, alert on and understand your metrics no matter where they are stored. Create, explore, and share dashboards with your team and foster a data driven culture.",
+		"icon": "https://raw.githubusercontent.com/jailmanager/iocage-plugins/master/icons/grafana.png",
+		"name": "Grafana (with InfluxDB)",
+		"official": false,
+		"primary_pkg": "grafana6"
+	},
+	"jackett": {
+		"MANIFEST": "jackett.json",
+		"description": "API Support for your favorite torrent trackers",
+		"icon": "https://raw.githubusercontent.com/jailmanager/iocage-plugins/master/icons/jackett.png",
+		"name": "Jackett",
+		"official": false,
+		"primary_pkg": "jackett"
+	},
+	"radarr": {
+		"MANIFEST": "radarr.json",
+		"name": "radarr",
+		"icon": "https://raw.githubusercontent.com/jailmanager/iocage-plugins/master/icons/radarr.png",
+		"description": "Fork of Sonarr. Automatically download movies in the style of Couchpotato.",
+		"official": false,
+		"primary_pkg": "radarr",
+		"category": "content",
+		"homepage": "https://radarr.video/"
+	},
+	"sabnzbd": {
+		"MANIFEST": "sabnzbd.json",
+		"description": "Sabznbd is a newsgroup reader.",
+		"icon": "https://raw.githubusercontent.com/jailmanager/iocage-plugins/master/icons/sabnzbd.png",
+		"name": "Sabnzbd",
+		"official": false,
+		"primary_pkg": "sabnzbdplus"
+	},
+	"sabnzbdv3": {
+		"MANIFEST": "sabnzbd3.json",
+		"description": "Sabznbd3 is a newsgroup reader.",
+		"icon": "https://raw.githubusercontent.com/jailmanager/iocage-plugins/master/icons/sabnzbd.png",
+		"name": "Sabnzbd3",
+		"official": false,
+		"primary_pkg": null
+	},
+	"sonarr": {
+		"MANIFEST": "sonarr.json",
+		"name": "Sonarr",
+		"icon": "https://raw.githubusercontent.com/jailmanager/iocage-plugins/master/icons/sonarr.png",
+		"description": "Multi-platform app to search, download, and manage TV shows.",
+		"official": false,
+		"primary_pkg": "sonarr",
+		"category": "content",
+		"homepage": "https://sonarr.tv/"
+	},
+	"unifi": {
+		"MANIFEST": "unificontroller.json",
+		"description": "Software-Defined Networking platform that provides an end-to-end system of network devices across different locations.",
+		"icon": "https://raw.githubusercontent.com/jailmanager/iocage-plugins/master/icons/unificontroller.png",
+		"name": "unificontroller",
+		"official": false,
+		"primary_pkg": "unifi5"
+	},
+	"transmission": {
+		"MANIFEST": "transmission.json",
+		"name": "Transmission",
+		"icon": "https://raw.githubusercontent.com/jailmanager/iocage-plugins/master/icons/transmission.png",
+		"description": "Fast and lightweight BitTorrent client.",
+		"official": false,
+		"primary_pkg": "transmission-daemon",
+		"category": "content",
+		"homepage": "https://transmissionbt.com/"
+	},
+	"tautulli": {
+		"MANIFEST": "tautulli.json",
+		"name": "Tautulli",
+		"icon": "https://raw.githubusercontent.com/jailmanager/iocage-plugins/master/icons/tautulli.png",
+		"description": "Monitors analytics and notifications for Plex Media Server. (formerly known as PlexPy)",
+		"official": false,
+		"primary_pkg": null,
+		"category": "entertainment",
+		"homepage": "https://tautulli.com/"
+	},
+	"bitwarden": {
+		"MANIFEST": "bitwarden.json",
+		"name": "Bitwarden",
+		"icon": "https://raw.githubusercontent.com/jailmanager/iocage-plugins/master/icons/tautulli.png",
+		"description": "Bitwarden is a password manager",
+		"official": false,
+		"primary_pkg": null,
+		"category": "security",
+		"homepage": ""
+	},
+	"forked_daapd": {
+		"MANIFEST": "forked_daapd.json",
+		"name": "forked_daapd",
+		"icon": "https://raw.githubusercontent.com/jailmanager/iocage-plugins/master/icons/tautulli.png",
+		"description": "forked_daapd transcodes audio",
+		"official": false,
+		"primary_pkg": null,
+		"category": "entertainment",
+		"homepage": ""
+	},
+	"kms": {
+		"MANIFEST": "kms.json",
+		"name": "KMS",
+		"icon": "https://raw.githubusercontent.com/jailmanager/iocage-plugins/master/icons/tautulli.png",
+		"description": "KMS is a activation server for Microsoft Windows",
+		"official": false,
+		"primary_pkg": null,
+		"category": "entertainment",
+		"homepage": ""
+	},
+	"traefik": {
+		"MANIFEST": "traefik.json",
+		"name": "Traefik",
+		"icon": "https://raw.githubusercontent.com/jailmanager/iocage-plugins/master/icons/traefik.png",
+		"description": "Traefik is a reverse proxy server",
+		"official": false,
+		"primary_pkg": null,
+		"category": "entertainment",
+		"homepage": ""
+	},
+	"influxdb": {
+		"MANIFEST": "influxdb.json",
+		"name": "InfluxDB",
+		"icon": "https://raw.githubusercontent.com/jailmanager/iocage-plugins/master/icons/influxdb.png",
+		"description": "InfluxDB is a database server",
+		"official": false,
+		"primary_pkg": null,
+		"category": "entertainment",
+		"homepage": ""
+	},
+	"organizr": {
+		"MANIFEST": "organizr.json",
+		"name": "Organizr",
+		"icon": "https://raw.githubusercontent.com/jailmanager/iocage-plugins/master/icons/organizr.png",
+		"description": "Organizr is a web GUI to sort your different webinterfaces",
+		"official": false,
+		"primary_pkg": null,
+		"category": "entertainment",
+		"homepage": ""
+	}
 }

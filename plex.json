@@ -23,6 +23,9 @@
 		]
 	},
 	"pkgs": [
+		"curl",
+		"ca_root_nss",
+		"bash",
 		"plexmediaserver",
 		"ffmpeg"
 	],

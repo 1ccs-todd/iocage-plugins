@@ -12,14 +12,28 @@
 		"includes": []
 	},
 	"pkgs": [
+		"curl",
+		"ca_root_nss",
+		"bash",
 		"traefik2"
 	],
 	"packagesite": "http://pkg.FreeBSD.org/${ABI}/latest",
 	"jailman": {
 		"traefik_service_port": 443,
 		"variables": {
-			"options": [],
-			"required": []
+			"options": [
+				"domain_name",
+				"cert_email",
+				"dns_provider",
+				"cert_wildcard_domain",
+				"cert_staging",
+				"cert_strict_sni",
+				"dashboard"
+			],
+			"required": [
+				"cert_email",
+				"dns_provider"
+			]
 		}
 	},
 	"fingerprints": {

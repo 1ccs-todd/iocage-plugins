@@ -5,7 +5,6 @@
 	"artifact": "https://github.com/jailmanager/iocage-plugin-sonarr.git",
 	"official": false,
 	"properties": {
-		"allow_sysvipc": 1,
 		"dhcp": 1
 	},
 	"devfs_ruleset": {
@@ -13,6 +12,9 @@
 		"includes": []
 	},
 	"pkgs": [
+		"curl",
+		"ca_root_nss",
+		"bash",
 		"mono",
 		"mediainfo",
 		"sqlite3"

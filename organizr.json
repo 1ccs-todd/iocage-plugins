@@ -12,6 +12,9 @@
 		"includes": []
 	},
 	"pkgs": [
+		"curl",
+		"ca_root_nss",
+		"bash",
 		"nginx",
 		"php74",
 		"php74-filter",

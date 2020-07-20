@@ -12,6 +12,9 @@
 		"includes": []
 	},
 	"pkgs": [
+		"curl",
+		"ca_root_nss",
+		"bash",
 		"sudo",
 		"nginx",
 		"redis",
@@ -65,8 +68,22 @@
 	"jailman": {
 		"traefik_service_port": 80,
 		"variables": {
-			"options": [],
-			"required": []
+			"options": [
+				"time_zone",
+				"link_mariadb",
+				"mariadb_password",
+				"mariadb_user",
+				"mariadb_database",
+				"admin_password",
+				"domain_name"
+			],
+			"required": [
+				"ip4_addr",
+				"admin_password",
+				"time_zone",
+				"link_mariadb",
+				"mariadb_password"
+			]
 		}
 	},
 	"fingerprints": {

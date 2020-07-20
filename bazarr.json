@@ -1,8 +1,8 @@
 {
-	"name": "bazarr",
+	"name": "Bazarr",
 	"plugin_schema": "2",
 	"release": "12.1-RELEASE",
-	"artifact": "https://github.com/jailmanager/iocage-plugin-bazarr",
+	"artifact": "https://github.com/jailmanager/iocage-plugin-bazarr.git",
 	"official": false,
 	"properties": {
 		"dhcp": 1
@@ -12,6 +12,9 @@
 		"includes": []
 	},
 	"pkgs": [
+		"curl",
+		"ca_root_nss",
+		"bash",
 		"python37",
 		"python3",
 		"python",
@@ -21,7 +24,7 @@
 		"libxslt",
 		"git",
 		"unrar",
-		"ffmpeg",
+		"ffmpeg"
 	],
 	"packagesite": "http://pkg.FreeBSD.org/${ABI}/latest",
 	"jailman": {

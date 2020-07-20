@@ -12,6 +12,9 @@
 		"includes": []
 	},
 	"pkgs": [
+		"curl",
+		"ca_root_nss",
+		"bash",
 		"mariadb104-server",
 		"git",
 		"nginx",
@@ -36,8 +39,12 @@
 	"jailman": {
 		"traefik_service_port": 80,
 		"variables": {
-			"options": [],
-			"required": []
+			"options": [
+				"root_password"
+				],
+			"required": [
+				"ip4_addr"
+				]
 		}
 	},
 	"fingerprints": {

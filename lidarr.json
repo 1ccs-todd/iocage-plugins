@@ -2,7 +2,7 @@
 	"name": "Lidarr",
 	"plugin_schema": "2",
 	"release": "12.1-RELEASE",
-	"artifact": "https://github.com/jailmanager/iocage-plugin-plex.git",
+	"artifact": "https://github.com/jailmanager/iocage-plugin-lidarr.git",
 	"official": false,
 	"properties": {
 		"dhcp": 1
@@ -12,6 +12,10 @@
 		"includes": []
 	},
 	"pkgs": [
+		"curl",
+		"ca_root_nss",
+		"bash",
+		"jq",
 		"mono",
 		"mediainfo",
 		"sqlite3"

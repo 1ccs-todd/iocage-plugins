@@ -12,9 +12,11 @@
 		"includes": []
 	},
 	"pkgs": [
+		"curl",
+		"ca_root_nss",
+		"bash",
 		"git",
 		"sudo",
-		"bash",
 		"node",
 		"npm",
 		"mariadb104-client"
@@ -23,8 +25,18 @@
 	"jailman": {
 		"traefik_service_port": 8000,
 		"variables": {
-			"options": [],
-			"required": []
+			"options": [
+				"admin_token",
+				"link_mariadb",
+				"mariadb_database",
+				"mariadb_user",
+				"mariadb_password"
+			],
+			"required": [
+				"ip4_addr",
+				"link_mariadb",
+				"mariadb_password"
+			]
 		}
 	},
 	"fingerprints": {

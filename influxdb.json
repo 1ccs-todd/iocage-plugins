@@ -12,6 +12,9 @@
 		"includes": []
 	},
 	"pkgs": [
+		"curl",
+		"ca_root_nss",
+		"bash",
 		"influxdb",
 		"jq"
 	],
@@ -20,7 +23,9 @@
 		"traefik_service_port": 80,
 		"variables": {
 			"options": [],
-			"required": []
+			"required": [
+				"ip4_addr"
+				]
 		}
 	},
 	"fingerprints": {

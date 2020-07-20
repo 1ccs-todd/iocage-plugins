@@ -12,6 +12,9 @@
 		"includes": []
 	},
 	"pkgs": [
+		"curl",
+		"ca_root_nss",
+		"bash",
 		"unifi5",
 		"jq"
 	],
@@ -19,7 +22,15 @@
 	"jailman": {
 		"traefik_service_port": 8443,
 		"variables": {
-			"options": [],
+			"options": [
+				"link_influxdb",
+				"poller",
+				"influxdb_database",
+				"influxdb_user",
+				"influxdb_password",
+				"poller_user",
+				"poller_password"
+			],
 			"required": []
 		}
 	},

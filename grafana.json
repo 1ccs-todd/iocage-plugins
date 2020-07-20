@@ -12,15 +12,23 @@
 		"includes": []
 	},
 	"pkgs": [
-		"grafana6",
-		"curl"
+		"curl",
+		"ca_root_nss",
+		"bash",
+		"grafana6"
 	],
 	"packagesite": "http://pkg.FreeBSD.org/${ABI}/latest",
 	"jailman": {
 		"traefik_service_port": 3000,
 		"variables": {
-			"options": [],
-			"required": []
+			"options": [
+				"link_influxdb",
+				"link_unifi",
+				"password"
+			],
+			"required": [
+				"password"
+			]
 		}
 	},
 	"fingerprints": {

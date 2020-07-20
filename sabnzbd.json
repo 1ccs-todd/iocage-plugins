@@ -12,7 +12,10 @@
 		"includes": []
 	},
 	"pkgs": [
-		""
+		"curl",
+		"ca_root_nss",
+		"bash",
+		"sabnzbdplus"
 	],
 	"packagesite": "http://pkg.FreeBSD.org/${ABI}/latest",
 	"jailman": {

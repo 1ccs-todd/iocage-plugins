@@ -2,7 +2,7 @@
 	"name": "Plex",
 	"plugin_schema": "2",
 	"release": "12.1-RELEASE",
-	"artifact": "https://github.com/jailmanager/iocage-plugin-plex.git",
+	"artifact": "https://github.com/jailmanager/iocage-plugin-forked_daapd.git",
 	"official": false,
 	"properties": {
 		"dhcp": 1
@@ -13,6 +13,8 @@
 	},
 	"pkgs": [
 		"curl",
+		"ca_root_nss",
+		"bash",
 		"alsa-lib",
 		"avahi",
 		"avahi-libdns",
@@ -57,8 +59,12 @@
 	"jailman": {
 		"traefik_service_port": 3689,
 		"variables": {
-			"options": [],
-			"required": []
+			"options": [
+				"itunes_media"
+				],
+			"required": [
+				"itunes_media"
+				]
 		}
 	},
 	"fingerprints": {
