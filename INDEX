@@ -63,7 +63,7 @@
 		"official": false,
 		"primary_pkg": "sabnzbdplus"
 	},
-	"sabnzbdv3": {
+	"sabnzbd3": {
 		"MANIFEST": "sabnzbd3.json",
 		"description": "Sabznbd3 is a newsgroup reader.",
 		"icon": "https://raw.githubusercontent.com/jailmanager/iocage-plugins/master/icons/sabnzbd.png",
