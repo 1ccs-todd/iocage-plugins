@@ -17,6 +17,7 @@
 		"bash",
 		"git",
 		"sudo",
+		"jq",
 		"node",
 		"npm",
 		"mariadb104-client"
