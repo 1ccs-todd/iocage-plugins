@@ -28,6 +28,10 @@
 				"cert_wildcard_domain",
 				"cert_staging",
 				"cert_strict_sni",
+				"link_influxdb",
+				"influxdb_database",
+				"influxdb_user",
+				"influxdb_password",
 				"dashboard"
 			],
 			"required": [
