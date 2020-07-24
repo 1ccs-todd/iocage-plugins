@@ -24,11 +24,12 @@
 			"options": [
 				"link_influxdb",
 				"link_unifi",
+				"link_traefik",
 				"password"
 			],
 			"required": [
 				"password"
-			]
+				]
 		}
 	},
 	"fingerprints": {
