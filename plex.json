@@ -35,9 +35,7 @@
 		"variables": {
 			"options": [
 				"ramdisk",
-				"hw_transcode",
-				"ruleset_script",
-				"beta"
+				"hw_transcode"
 			],
 			"required": []
 		}
